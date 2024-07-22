@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .btn{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .btn1{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 400px;
+        height: 50px;
+        border-style: none;
+    }
+    .letter{
+        float: left;
+        position: relative;
+        font-size: medium;
+    }
+   .full{
+      width: 600px;
+      height: 600px;
+      background-color: orange;
+      margin-left: 300px;
+ 
+   }
+   .question{
+    font-size: 40px;
+    padding: 5px;
+    
+   }
+   .btn2{
+    display: flex;
+    
+    
+   }
+   .btn3{
+    display: flex;
+   }
+   .btn4{
+    display: flex;
+   }
+   .btn5{
+    display: flex;
+   }
+   .a{
+    width:40px;
+    height:40px;
+    height: 50px;
+    background-color: brown;
+    margin-top: 10px;
+    border-style: none;
+    border-right: 2px solid rgb(78, 49, 49);
+   }
+</style>
+</head>
+<body>
+    <div class="full">
+        <h3 class="question">In Web design,What does CSS stand for?</h3>
+        <br><br>
+        <div class="btn">
+     <div class="btn2">  <button class="a" id="wrg1">A.</button> <button class="btn1" onclick="wrong()" id="wrg"><h3 class="letter">calculater strike source</h3></button></div>
+    <div class="btn3"> <button class="a" id="wrg2">B.</button> <button class="btn1"  onclick="wrong1()"id="wrg1"><h3 class="letter">calculater style sheet</h3></button></div>
+    <div class="btn4">  <button class="a"id="wrg3">C.</button><button class="btn1"  onclick="wrong2()" id="wrg2"><h3 class="letter">calculater strike style</h3></button></div>
+    <div class="btn5">  <button class="a" id="cor1">D.</button> <button class="btn1"  onclick="correct()" id="cor"><h3 class="letter">cascading style sheet</h3></button></div>
+    </div>
+    </div>
+    <script>
+        function wrong(){
+            let answer1 =document.getElementById("wrg").style.backgroundColor ="red";
+            console.log(answer1);
+            let answer2 =document.getElementById("wrg1").style.backgroundColor ="red";
+            console.log(answer2);
+            
+        }
+      
+        function wrong1(){
+            let answer =document.getElementById("wrg1").style.backgroundColor ="red";
+            console.log(answer);
+            let answer2 =document.getElementById("wrg2").style.backgroundColor ="red";
+            console.log(answer2);
+        }
+        function wrong2(){
+            let answer =document.getElementById("wrg2").style.backgroundColor ="red";
+            console.log(answer);
+            let answer2 =document.getElementById("wrg3").style.backgroundColor ="red";
+            console.log(answer2);
+        }
+        function correct(){
+           let answer =document.getElementById("cor").style.backgroundColor ="green";
+           console.log(answer);
+           let answer1 =document.getElementById("cor1").style.backgroundColor ="green";
+           console.log(answer1);
+           
+        }
+    </script>
+</body>
+</html>
